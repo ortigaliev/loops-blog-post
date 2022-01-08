@@ -1,6 +1,8 @@
 /* Custom Prop */
 :root{
-  
+  --bg-color: rgb(242, 206, 151);
+  --author-card-bg: rgb(72, 73, 86);
+  --text-color: #000;
 }
 
 /* GLOBAL STYLES */
@@ -26,8 +28,8 @@ body{
   font-size: 16px;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: var();
-  color: var();
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 img{
@@ -49,4 +51,34 @@ img{
 /* MAIN CONTENT */
 .main-content{
   flex-grow: 1;
+}
+
+.blog-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 5px;
+
+}
+.blog-author-card {
+  width: 400px;
+  height: 550px;
+  padding: 60px 35px;
+  background-color: var(--author-card-bg);
+}
+.blog-topic {
+  padding: 0;
+  margin: 0;
+}
+.devider {
+}
+.author-info {
+}
+.author-img {
+}
+.author_name {
 }
